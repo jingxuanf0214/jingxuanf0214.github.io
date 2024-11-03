@@ -3,90 +3,203 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Personal Website</title>
+    <title>Jingxuan Fan - Neuroscience Research</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
+            color: #333;
         }
         
         header {
-            background-color: #f4f4f4;
+            background-color: #1d3557;
+            color: white;
             text-align: center;
-            padding: 2rem;
+            padding: 2.5rem;
+        }
+        
+        .contact-info {
+            margin-top: 1rem;
+            font-size: 0.9rem;
+        }
+        
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+        
+        .contact-info a:hover {
+            text-decoration: underline;
         }
         
         nav {
-            background-color: #333;
-            color: white;
+            background-color: #457b9d;
             padding: 1rem;
+            position: sticky;
+            top: 0;
         }
         
         nav a {
             color: white;
             text-decoration: none;
             margin: 0 1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        
+        nav a:hover {
+            background-color: #1d3557;
         }
         
         .container {
-            max-width: 800px;
+            max-width: 1000px;
             margin: 2rem auto;
-            padding: 0 1rem;
+            padding: 0 2rem;
         }
         
         section {
-            margin-bottom: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        h2 {
+            color: #1d3557;
+            border-bottom: 2px solid #457b9d;
+            padding-bottom: 0.5rem;
+        }
+        
+        .education-item, .experience-item {
+            margin-bottom: 1.5rem;
+        }
+        
+        .education-item h3, .experience-item h3 {
+            color: #1d3557;
+            margin-bottom: 0.5rem;
+        }
+        
+        .date {
+            color: #666;
+            font-style: italic;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .publication {
+            margin-bottom: 1rem;
+            padding: 1rem;
+            background-color: #f8f9fa;
+            border-radius: 4px;
         }
         
         footer {
-            background-color: #333;
+            background-color: #1d3557;
             color: white;
             text-align: center;
             padding: 1rem;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            margin-top: 2rem;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Your Name</h1>
-        <p>Web Developer | Designer | Creator</p>
+        <h1>Jingxuan Fan</h1>
+        <p>Ph.D. Candidate in Neuroscience | Harvard University</p>
+        <div class="contact-info">
+            <a href="mailto:jfan@g.harvard.edu">jfan@g.harvard.edu</a>
+            <a href="https://linkedin.com/in/jingxuan-fan/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/jingxuanf0214" target="_blank">GitHub</a>
+        </div>
     </header>
     
     <nav>
         <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <a href="#education">Education</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#skills">Skills</a>
     </nav>
     
     <div class="container">
         <section id="about">
             <h2>About Me</h2>
-            <p>Hello! I'm a [your profession] passionate about [your interests]. I love creating and learning new things.</p>
+            <p>I am a Ph.D. candidate in the Program in Neuroscience at Harvard University, focusing on neural circuit computation underlying reward-guided navigation. My research interests span across neuroscience, machine learning, and computational modeling.</p>
         </section>
         
-        <section id="projects">
-            <h2>Projects</h2>
-            <ul>
-                <li>Project 1 - Description</li>
-                <li>Project 2 - Description</li>
-                <li>Project 3 - Description</li>
-            </ul>
+        <section id="education">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>Harvard University</h3>
+                <p class="date">Expected Jan. 2026</p>
+                <p>Ph.D. Candidate, Program in Neuroscience</p>
+                <p>M.S. in Applied Math (secondary), March 2024</p>
+            </div>
+            <div class="education-item">
+                <h3>Massachusetts Institute of Technology</h3>
+                <p class="date">May 2020</p>
+                <p>B.S. in Brain and Cognitive Science</p>
+                <p>Honors: Hans Lukas Teuber Award, Walle J.H. Nauta Award</p>
+            </div>
         </section>
         
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Email: your.email@example.com</p>
-            <p>GitHub: <a href="https://github.com/yourusername">github.com/yourusername</a></p>
+        <section id="research">
+            <h2>Research Experience</h2>
+            <div class="experience-item">
+                <h3>Harvard University - PhD Researcher</h3>
+                <p class="date">Current</p>
+                <ul>
+                    <li>Developing visual-olfactory virtual reality environments for studying reward-guided spatial reasoning</li>
+                    <li>Designing and training RNN-PPO agents with internal curiosity modules</li>
+                    <li>Analyzing Drosophila connectome datasets and performing graph embedding analysis</li>
+                </ul>
+            </div>
+            <div class="experience-item">
+                <h3>Meta - Research Intern</h3>
+                <p class="date">May 2024-Aug. 2024</p>
+                <ul>
+                    <li>Developing novel image-based feature representations for high density sEMG</li>
+                    <li>Implementing generative models for sEMG data analysis</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section id="publications">
+            <h2>Selected Publications</h2>
+            <div class="publication">
+                <p>Fan, J., Martinson, S., Wang, E.Y., Hausknecht, K. (2024). HARDMath: A Benchmark Dataset for Challenging Problems in Applied Mathematics. NeurIPS 2024 MATH-AI workshop</p>
+            </div>
+            <div class="publication">
+                <p>Kwon, J.-T., et al. (2021). An amygdala circuit that suppresses social engagement. Nature, 593(7857), 114–118.</p>
+            </div>
+            <div class="publication">
+                <p>Wei, H., et al. (2021). Single-nanometer iron oxide nanoparticles as tissue-permeable MRI contrast agents. Proceedings of the National Academy of Sciences, 118(42).</p>
+            </div>
+        </section>
+        
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div>
+                    <h3>Programming</h3>
+                    <p>Python (PyTorch, Tensorflow, scikit-learn, Pandas, SciPy/NumPy), Matlab, SQL, Linux, Git</p>
+                </div>
+                <div>
+                    <h3>Modeling</h3>
+                    <p>Generative models, reinforcement learning, representation learning, time series analysis, LLM benchmarking</p>
+                </div>
+            </div>
         </section>
     </div>
     
     <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <p>© 2024 Jingxuan Fan | Boston, MA</p>
     </footer>
 </body>
 </html>
