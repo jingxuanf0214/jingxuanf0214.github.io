@@ -186,6 +186,16 @@ a:hover {
   margin-right: -3px;
 }
 
+.bio-wrapper .interests {
+  margin-top: 8px;
+}
+
+.bio-wrapper .interests > div {
+  margin-bottom: 4px;
+  padding-left: 14px;
+  text-indent: -14px;
+}
+
 /*------------------
  * Name
  *------------------*/
